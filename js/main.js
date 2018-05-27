@@ -33,8 +33,6 @@ function init() {
             var imageNode = document.createElement('img');
             imageNode.id = i + "" + j;
             imageNode.classList.add("image");
-            // imageNode.style.width = '100%';
-            // imageNode.style.height = 'auto';
             if (APP_DATA[imageNode.id] && RELOAD_SAVED_PROGRESS) {
                 imageNode.src = APP_DATA[imageNode.id].ImageSource;
                 imageNode.clicked = APP_DATA[imageNode.id]["clicked"];
